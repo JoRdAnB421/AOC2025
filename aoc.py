@@ -42,11 +42,3 @@ class aoc:
 
         if self.part == 2:
             print(f"----\nTotal time: {self.time:.3f}s")
-
-# Seconds per day
-# Day 1: 0.033
-# Day 2: 0.012
-# Day 3: 0.003
-# Day 4: 0.027
-# Day 5: 0.185
-# Day 6:
