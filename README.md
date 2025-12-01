@@ -1,7 +1,7 @@
 Here we store the attempts for the 2025 Advent of Code along with a leaderboard for the time taken to complete each day both in man hours and cpu hours.
 
 | Day | Time spent (hours) | Total CPU time (secs)| 
-|-----|------------|----------------|
+|:----:|:----------:|:--------------:|
 |Day 1| ~1 | 0.011 |
 |Day 2|            |                |
 |Day 3|||
