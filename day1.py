@@ -2,6 +2,8 @@ def part_1(data):
     count_zeros=0
     pos=50 # Start pointing at 50 
     for turn in data:
+        turn = turn.strip()
+
         # Check direction
         if turn[0]=="R":
             direction=1
@@ -21,6 +23,8 @@ def part_2(data):
     count_zeros=0
     pos=50
     for turn in data:
+        turn = turn.strip()
+
         # Check direction
         if turn[0]=="R":
             direction=1
@@ -54,9 +58,7 @@ def part_2(data):
 
 if __name__=="__main__":
     with open("Inputs/day1.txt", "r") as f:
-        data = []
-        for line in f.readlines():
-            data.append(line.strip())
+        data = f.readlines()
 
     res_1 = part_1(data)
     print(f"Part 1 answer = {res_1}")

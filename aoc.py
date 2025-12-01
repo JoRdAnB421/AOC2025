@@ -4,18 +4,18 @@ import time
 
 class aoc:
 
-    def __init__(self, day, delimiter=" ", repetition=10):
+    def __init__(self, day, delimiter=" ", repetition=10, file_ext="csv"):
         self.part = 0
         self.repetition = repetition
 
         t0 = time.time()
-        self.data = self.read(day, delimiter)
+        self.data = self.read(day, delimiter, file_ext)
         t1 = time.time()
         self.time = t1 - t0
         print(f"Time to read: {self.time:.3f}s")
 
-    def read(self, day, delimiter):
-        with open(f"day{day}.csv") as f:
+    def read(self, day, delimiter, file_ext):
+        with open(f"Inputs/day{day}.{file_ext}") as f:
             if delimiter is None:
                 return f.readlines()
             reader = csv.reader(f, delimiter=delimiter)
@@ -23,10 +23,11 @@ class aoc:
         return data
 
     def run(self, func):
+        """Requires the daily part functions to accept 'data'"""
         times = []
         for _ in range(self.repetition):
             t0 = time.time()
-            answer = func(self)
+            answer = func(self.data)
             t1 = time.time()
             times.append(t1 - t0)
 

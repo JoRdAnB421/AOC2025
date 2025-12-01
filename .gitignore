@@ -1,3 +1,4 @@
 .vscode/*
 Inputs/*
 test_inputs/*
+__pycache__/*
