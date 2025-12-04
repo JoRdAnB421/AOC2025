@@ -39,7 +39,7 @@ class aoc:
 
         self.part += 1
         self.time += mean_time
-        print(f"Part {self.part} answer: {answer} (in {t1 - t0:.3f} +- {variance**0.5:.1e}s)")
+        print(f"Part {self.part} answer: {answer} (in {mean_time:.3f} +- {variance**0.5:.1e}s)")
 
         if self.part == 2:
             print(f"----\nTotal time: {self.time:.3f}s")
