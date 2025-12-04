@@ -5,7 +5,7 @@ Here we store the attempts for the 2025 Advent of Code along with a leaderboard 
 |Day 1| 1 | 0.011 |
 |Day 2| 0.5| 1.490 |
 |Day 3| 1 | 0.011 |
-|Day 4|||
+|Day 4| 0.333 | 0.786 |
 |Day 5|||
 |Day 6|||
 |Day 7|||
