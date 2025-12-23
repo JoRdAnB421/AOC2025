@@ -73,12 +73,8 @@ def part_2(data):
     # sort coordinate pairs by distance
     all_incl=False
     size=1
-    print(f"size of data = {len(data)}")
-    print(f"size of data = {len(coord_pairs_sorted)}")
-
     while not all_incl:
         size+=1
-        print(size, end="\r")
         part_coord_pairs_sorted = coord_pairs_sorted[:size]
 
         circuits = merge_sets(part_coord_pairs_sorted)
